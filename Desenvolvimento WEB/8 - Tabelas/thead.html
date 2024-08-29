@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tabelas</title>
+    <style>
+      table {
+        border: 1px solid #000;
+        text-align: center;
+        height: 300px;
+        width: 100%;
+      }
+      thead {
+        background: #0f0;
+        color: #00f;
+      }
+      tbody {
+        background: #ff0;
+        color: #f00;
+      }
+      tfoot {
+        background: #00f;
+        color: #f0f;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Legenda da tabela
+      </caption>
+      <thead>
+        <tr>
+          <!--linha 1 da tabela -->
+          <td colspan="3">conteúdo thead</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!--linha 2 da tabela -->
+          <td>conteúdo tbody</td>
+          <td>conteúdo tbody</td>
+          <td>conteúdo tbody</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!--linha 3 da tabela -->
+          <td colspan="3">conteúdo tfoot</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

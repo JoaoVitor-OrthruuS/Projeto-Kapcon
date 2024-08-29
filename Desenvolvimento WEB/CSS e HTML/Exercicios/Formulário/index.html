@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Formulário de cadastro</h1>
+        <form>
+            <label for="nome">Nome completo:</label>
+            <input type="text" name="nome" id="nome" /><br />
+            <label for="email">Digite seu Email:</label>
+            <input type="email" name="email" id="email" /><br />
+            <label for="senha">Digite uma senha:</label>
+            <input type="password" name="senha" id="senha" /><br />
+
+            <p>Qual é o seu sexo?</p>
+            <input type="radio" id="Masculino" name="sexo" value="Masculino" />
+            <label for="Masculino">Masculino</label>
+            <input type="radio" id="Feminino" name="sexo" value="Feminino" />
+            <label for="Feminino">Feminino</label>
+            <input type="radio" id="Outro" name="sexo" value="Outro" />
+            <label for="Outro">Outro</label>
+
+            <p>Quais veículos você possui?</p>
+            <input type="checkbox" id="Carro" name="Carro" value="Carro" />
+            <label for="Carro">Carro</label>
+            <input type="checkbox" id="Moto" name="Moto" value="Moto" />
+            <label for="Moto">Moto</label>
+            <input type="checkbox" id="Barco" name="Barco" value="Barco" />
+            <label for="Barco">Barco</label><br />
+
+            <label for="Imoveis">Qual imóvel você procura?</label>
+            <select>
+                <option value="Casa">Casa</option>
+                <option value="Apartamento">Apartamento</option>
+                <option value="Sobrado">Sobrado</option>
+            </select>
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            label {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p>O meu formulário</p>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            <p>
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                    required
+                />
+            </p>
+            <p>
+                <label for="feminino">Sou um dev</label>
+                <input type="checkbox" id="dev1" name="dev1" value="sim" />
+                <label for="dev2">Sou um dev</label>
+                <input type="checkbox" id="dev2" name="dev2" value="sim" />
+                <label for="dev3">Sou um dev</label>
+                <input type="checkbox" id="dev3" name="dev3" value="sim" />
+            </p>
+
+            <p>
+                Gênero:<br />
+                <label for="feminino">feminino</label>
+                <input
+                    type="radio"
+                    id="feminino"
+                    name="genero"
+                    value="feminino"
+                />
+                <label for="masculino">masculino</label>
+                <input
+                    type="radio"
+                    id="masculino"
+                    name="genero"
+                    value="masculino"
+                />
+                <label for="outro">outro</label>
+                <input type="radio" id="outro" name="genero" value="outro" />
+            </p>
+            <p>
+                <label for="Date">Date:</label>
+                <input type="date" id="date" name="date" value="2020-04-20" />
+            </p>
+
+            <p>
+                <label for="date-local">Data local:</label>
+                <input
+                    type="datetime-local"
+                    id="date-local"
+                    name="date-local"
+                />
+            </p>
+
+            <p>
+                <label for="time">Horario:</label>
+                <input type="time" id="time" name="time" value="20:00:01" />
+            </p>
+
+            <p>
+                <label for="cor">Cor favorita:</label>
+                <input type="color" id="cor" name="cor" value="#FF0000" />
+            </p>
+
+            <p>
+                <label for="email">Seu Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ex: email@email.com"
+                />
+            </p>
+
+            <p>
+                <label for="foto">Sua foto:</label>
+                <input type="file" id="foto" name="foto" accept=".png,svg" />
+            </p>
+
+            <p>
+                <label for="number">Número:</label>
+                <input
+                    id="number"
+                    name="number"
+                    placeholder="Digite um número"
+                    min="10"
+                    max="50"
+                />
+            </p>
+
+            <p>
+                <label for="password">Digite sua senha:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Digite sua senha:"
+                />
+            </p>
+
+            <p>
+                <label for="range">range:</label>
+                <input type="range" id="range" name="range" max="10" />
+            </p>
+
+            <p>
+                <label for="search">Sua url:</label>
+                <input type="search" id="search" name="search" />
+            </p>
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">reset</button>
+            </p>
+        </form>
+    </body>
+</html>

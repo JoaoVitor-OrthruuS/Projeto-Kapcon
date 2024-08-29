@@ -1,0 +1,63 @@
+* {
+    font-size: 35px;
+}
+
+/*Propriedade Hover, acionamos um efeito ao passar o mouse por cima 
+do item especificado*/
+
+#hover:hover {
+    background-color: red;
+    transition: all 1000ms ease-in-out; /*Adiciona o efeito de transição*/
+}
+
+/*Link, utilizado para alterar propriedades de links que ainda não foram visitados*/
+
+a:link {
+    color: darkorange;
+}
+
+/*Parecido com link, mas altera as propriedades de links que foram marcados como visitados*/
+
+a:visited {
+    color: deeppink;
+}
+
+/*Active, é acionado quando um elemento está clicado, ou ativo, sendo pressionado */
+
+a:active {
+    background-color: green;
+    color: white;
+    text-decoration: none; /*Remove o sublinhado e qualquer decoração do elemento.*/
+}
+
+/*Focus, é acionado quando o elemento está clicado, ou em foco*/
+
+input:focus {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+/*Enabled, aciona quando o elemento esta ativo*/
+/*Disabled, acionado quando um elemento esta desabilitado*/
+
+input:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+/*Checked, aciona quando o input está checado*/
+
+input:checked {
+    width: 30px;
+    height: 30px;
+}
+
+input:checked + p {
+    background: red;
+}
+
+/*Not, nega uma condição*/
+/*No exemplo abaixo todos os paragráfos forama pintados de azul, menos os que possuem a classe "nao"*/
+p:not(#nao) {
+    color: blue;
+}

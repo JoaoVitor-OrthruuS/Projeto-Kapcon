@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de multas</title>
+    </head>
+    <body>
+        <h1>Sistema de múltas</h1>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" name="nome" /><br />
+        <label for="velocidade">Digite sua velocidade:</label>
+        <input type="number" id="velocidade" name="velocidade" /><br />
+        <button value="enviar" id="enviar">Enviar</button>
+        <div id="resultado"></div>
+    </body>
+    <script>
+        var enviar = window.document.getElementById("enviar");
+        var nome = window.document.getElementById("nome");
+        var velocidade = window.document.getElementById("velocidade");
+        var resultado = window.document.getElementById("resultado");
+
+        enviar.addEventListener("click", teste_velocidade);
+
+        function teste_velocidade() {
+            velocidade = Number(velocidade.value);
+            nome = nome.value;
+
+            if (velocidade > 60) {
+                resultado.innerHTML = `Olá senhor ${nome}, você está andando á ${velocidade}km/h e foi multado!`;
+            } else {
+                resultado.innerHTML = `Olá senhor ${nome}, você está andando á ${velocidade}km/h, se mantendo no limite da velocidade!`;
+            }
+        }
+    </script>
+</html>

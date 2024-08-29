@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <form action="teste.php" method="post" name="meu_formulario">
+      Login: <input type="text" name="login" required /> Senha:
+      <input type="password" name="senha" required />
+      <p>
+        Sexo:<br />
+        <input type="radio" name="sexo" value="M" required />Masculino
+        <input type="radio" name="sexo" value="F" required />Feminino
+      </p>
+
+      <p>
+        Selecione uma data: <input type="date" required />
+
+        <input type="reset" value="limpe os dados do formulário" />
+      </p>
+
+      <p>
+        <input type="submit" value="envie o formulário" />
+      </p>
+    </form>
+  </body>
+</html>

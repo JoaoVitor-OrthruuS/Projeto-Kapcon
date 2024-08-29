@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: solid 10px black;
+        width: 1000px;
+        height: 1000px;
+        background-image: url(estrela.png);
+        background-repeat: repeat-x;
+      }
+
+      #border-box {
+        background-clip: border-box;
+      }
+
+      #padding-box {
+        background-clip: padding-box;
+      }
+
+      #content-box {
+        background-clip: content-box;
+      }
+
+      #initial {
+        background-clip: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>border-box</h1>
+    <p>
+      começa do canto superior esquerdo e preenche todo o fundo, incluído a
+      borda (padrão);
+    </p>
+    <div id="border-box"></div>
+    <br />
+
+    <h1>padding-box</h1>
+    <p>começa do canto superior esquerdo e não preenche a borda (padrão);</p>
+    <div id="padding-box"></div>
+    <br />
+
+    <h1>content-box</h1>
+    <p>content-box: preenche apenas a área com conteúdo;</p>
+    <div id="content-box"></div>
+    <br />
+
+    <h1>initial</h1>
+    <p>initial: define a pro´propriedade como padrão (border-box);</p>
+    <div id="initial"></div>
+    <br />
+  </body>
+</html>

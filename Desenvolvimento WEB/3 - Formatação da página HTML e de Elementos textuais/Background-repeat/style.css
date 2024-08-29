@@ -1,0 +1,30 @@
+div {
+  background: #c0c0c0 url("estrela.png");
+  width: 1000px;
+  height: 1000px;
+  border: solid black 15px;
+}
+
+#no-repeat {
+  background-repeat: no-repeat;
+}
+
+#repeat {
+  background-repeat: repeat;
+}
+
+#repeat-x {
+  background-repeat: repeat-x;
+}
+
+#repeat-y {
+  background-repeat: repeat-y;
+}
+
+#space {
+  background-repeat: space;
+}
+
+#round {
+  background-repeat: round;
+}

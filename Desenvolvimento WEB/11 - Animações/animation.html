@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Animações</title>
+        <style>
+        /* Código da animação */
+            @keyframes teste { /* criação do @keyframes com nome teste */
+                    0%   {background-color:#FF0; left:0px; top:0px;width:300px;height:200px;}/* posição inicial */
+                    25%  {background-color:#F00; left:400px; top:0px;width:200px;height:100px;}
+                    50%  {background-color:#0F0; left:400px; top:400px;width:100px;height:50px;}
+                    75%  {background-color:#F0F; left:0px; top:400px;width:200px;height:100px;}
+                    100% {background-color:#FF0; left:0px; top:0px;width:300px;height:200px;}/* volta a posição inicial  */
+                    }
+ 
+        /* Elemento que vamos aplicar a animação */
+          div {
+                    width: 300px;
+                    height: 200px;
+                    position: relative; /* definição da posição do elemento */
+                    background-color: #00F;
+                    animation: teste 10s ease-in 5s 4 alternate; /* linha de comando da propriedade animation abreviada */
+                 }
+        
+        </style>
+    </head>
+    <body>
+        
+          <div></div>
+ 
+    </body>
+</html>

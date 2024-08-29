@@ -1,0 +1,29 @@
+/*parecido com pseudo-classes, os pseudo-elementos devem ser declarados com "::"*/
+
+/*Como exeplo temo before e after, que adicionam conteudo ante de depois respectivamente*/
+
+ul li::after {
+    content: "-";
+    background: red;
+    color: #fff;
+}
+/*Transforma a primeira letra do conteúdo selecionado*/
+p::first-letter {
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/*Altera a primeira linha do conteúdo*/
+
+p::first-line {
+    background: red;
+}
+
+/*Altera o que for selecionado*/
+
+p::selection {
+    background: black;
+    color: white;
+}

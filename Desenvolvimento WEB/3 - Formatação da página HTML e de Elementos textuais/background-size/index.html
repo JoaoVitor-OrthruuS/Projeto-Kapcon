@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: solid 10px black;
+        width: 1000px;
+        height: 1000px;
+        background-image: url(estrela.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+      }
+
+      #auto {
+        background-size: auto;
+      }
+
+      #Length {
+        background-size: 100px;
+      }
+
+      #porcentagem {
+        background-size: 25% 15%;
+      }
+
+      #cover {
+        background-size: cover;
+      }
+
+      #contain {
+        background-size: contain;
+      }
+
+      #initial {
+        background-size: initial;
+      }
+
+      #inherit {
+        background-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Auto</h1>
+    <p>valor padrão (mesma largura e altura da imagem);</p>
+    <div id="auto"></div>
+    <br />
+
+    <h1>Length</h1>
+    <p>
+      width height: define um valor em pixel para a largura e altura. Se apenas
+      um é definido, o segundo fica como auto;
+    </p>
+    <div id="Length"></div>
+    <br />
+
+    <h1>%</h1>
+    <p>
+      define um valor em porcentagem para a largura e altura. Se apenas um é
+      definido, o segundo fica como auto;
+    </p>
+    <div id="porcentagem"></div>
+    <br />
+
+    <h1>cover</h1>
+    <p>
+      encaixa a imagem no fundo, preenchendo todo o espaço, sem repetição (pode
+      ser que a imagem não apareça toda) ;
+    </p>
+    <div id="cover"></div>
+    <br />
+
+    <h1>contain</h1>
+    <p>encaixa a imagem perfeitamente no fundo da página;</p>
+    <div id="contain"></div>
+    <br />
+
+    <h1>initial</h1>
+    <p>Valor padrão (mesma largura e altura da imagem);</p>
+    <div id="initial"></div>
+    <br />
+
+    <h1>Inherit</h1>
+    <p>Herda a propriedade do elemento pai.</p>
+    <div id="inherit"></div>
+    <br />
+  </body>
+</html>

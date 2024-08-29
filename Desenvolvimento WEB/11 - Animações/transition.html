@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Transições</title>
+        <style>
+      
+            /* Elemento que vamos aplicar a transição */
+            div {
+                width: 300px;
+                height: 200px;
+                background-color: #00F;
+                transition: width 2s, height 4s; /* propriedade transition informando que será alterada a largura e altura  com tempos diferentes*/
+                transition-timing-function: ease-out;/*controla a forma como a transição funcionará, neste caso com um fim mais lento*/
+                }
+            /* elemento div com o estado houve - mouse sobre - que ativará a transição até 600px de largura e 300px de altura*/ 
+            div:hover
+                {  
+                width: 600px;
+                height: 300px;
+                }
+ 
+        </style>
+    </head>
+    <body>
+        
+        <div></div>
+ 
+    </body>
+</html>

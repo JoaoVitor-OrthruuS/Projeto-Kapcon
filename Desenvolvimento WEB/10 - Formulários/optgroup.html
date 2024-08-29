@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <form action="teste.php" method="post" name="meu_formulario">
+      <form id="form" method="post" action="">
+        <label for="feira"
+          >Feira<br />
+          <select name="select" id="feira">
+            <option selected value="1">Escolha um item</option>
+            <optgroup label="frutas">
+              <option value="banana">Banana</option>
+              <option value="laranja">Laranja</option>
+              <option value="melancia">Melancia</option>
+              <option value="uva">Uva</option>
+            </optgroup>
+            <optgroup label="Verduras">
+              <option value="alface">Alface</option>
+              <option value="agriao">Agrião</option>
+              <option value="rucula">Rúcula</option>
+            </optgroup>
+          </select>
+        </label>
+      </form>
+      <p>
+        <input type="reset" value="limpe os dados do formulário" />
+
+        <input type="submit" value="envie o formulário" />
+      </p>
+    </form>
+  </body>
+</html>
