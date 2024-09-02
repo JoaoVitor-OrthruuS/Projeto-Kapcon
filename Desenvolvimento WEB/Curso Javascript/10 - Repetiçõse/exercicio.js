@@ -19,5 +19,9 @@ function faca_enquanto() {
 faca_enquanto();
 
 function para() {
-    for(c=1){}
+    for (c = 1; c <= 8; c++) {
+        console.log(c);
+    }
 }
+
+para();
