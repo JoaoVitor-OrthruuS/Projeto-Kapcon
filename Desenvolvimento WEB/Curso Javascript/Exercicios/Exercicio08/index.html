@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Vamos contar</h1>
+
+            <div id="caixa">
+                <p>Inicio <input id="inicio" type="text" /></p>
+                <p>
+                    Fim
+                    <input id="fim" type="text" />
+                </p>
+                <p>Passo <input id="passo" type="text" /></p>
+                <button id="botao" value="contar" onclick="contar()">
+                    Contar
+                </button>
+                <div id="processamento">
+                    <p>Preparando a contagem...</p>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js" async></script>
+    </body>
+</html>
