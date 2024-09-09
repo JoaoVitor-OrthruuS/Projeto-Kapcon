@@ -14,4 +14,4 @@ for (var pos in num) {
     console.log(num[pos]);
 }
 
-console.log(num.indexOf(5));
+console.log(num.indexOf(9));
