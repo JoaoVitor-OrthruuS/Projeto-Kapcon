@@ -27,3 +27,26 @@ function media_array() {
 }
 
 console.log(media_array());
+
+//------------------//
+
+function caixa_alta(nome) {
+    var nome;
+    return nome.toUpperCase();
+}
+
+console.log(caixa_alta("joao"));
+
+//--------------------//
+
+function fatorial(numero) {
+    let contador = numero;
+    let acumulo = numero;
+    while (contador > 2) {
+        contador--;
+        acumulo *= contador;
+    }
+    return acumulo;
+}
+
+console.log(fatorial(3));
