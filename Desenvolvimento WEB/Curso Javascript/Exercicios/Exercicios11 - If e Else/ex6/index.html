@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+            }
+            main {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p>Digite o primeiro valor: <input type="number" id="valor1" /></p>
+            <p>Digite o segundo valor: <input type="number" id="valor2" /></p>
+            <p>Digite o terceiro valor: <input type="number" id="valor3" /></p>
+
+            <button id="botao" onclick="verificar()">Verificar</button>
+
+            <p id="resposta"></p>
+        </main>
+        <script>
+            let botao = document.getElementById("botao");
+
+            function verificar() {
+                let valor1 = Number(document.getElementById("valor1").value);
+                let valor2 = Number(document.getElementById("valor2").value);
+                let valor3 = Number(document.getElementById("valor3").value);
+
+                let resposta = document.getElementById("resposta");
+
+                if (valor1 > valor2 && valor1 > valor3) {
+                    resposta.innerHTML = `${valor1} é o maior valor`;
+                } else if (valor2 > valor1 && valor2 > valor3) {
+                    resposta.innerHTML = `${valor2} é o maior valor`;
+                } else if (valor3 > valor1 && valor3 > valor2) {
+                    resposta.innerHTML = `${valor3} é o maior valor`;
+                }
+            }
+
+            botao.addEventListener("click", verificar);
+        </script>
+    </body>
+</html>
