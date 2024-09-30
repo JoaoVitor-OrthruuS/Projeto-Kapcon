@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            Responda as seguintes questões com <b>Sim</b> ou <b>Não</b> para
+            classificar o crime:
+        </p>
+        <p>Telefonou para vítima? <input type="text" id="quest1" /></p>
+        <p>Esteve no local do crime? <input type="text" id="quest2" /></p>
+        <p>Mora perto da vítima? <input type="text" id="quest3" /></p>
+        <p>Devia para a vítima? <input type="text" id="quest4" /></p>
+        <p>Já trabalhou com a vítima? <input type="text" id="quest5" /></p>
+        <button id="botao" onclick="verificar()">Verificar</button>
+        <p id="classificar"></p>
+        <script>
+            botao = document.getElementById("botao");
+
+            function verificar() {
+                let quest1 = document.getElementById("quest1").value;
+                let quest2 = document.getElementById("quest2").value;
+                let quest3 = document.getElementById("quest3").value;
+                let quest4 = document.getElementById("quest4").value;
+                let quest5 = document.getElementById("quest5").value;
+
+                let classificar = document.getElementById("classificar");
+
+                let contador = 0;
+
+                if (quest1 == "sim") {
+                    contador += 1;
+                }
+                if (quest2 == "sim") {
+                    contador += 1;
+                }
+                if (quest3 == "sim") {
+                    contador += 1;
+                }
+                if (quest4 == "sim") {
+                    contador += 1;
+                }
+                if (quest5 == "sim") {
+                    contador += 1;
+                }
+
+                if (contador == 2) {
+                    classificar.innerHTML = `Suspeito`;
+                } else if (contador == 3 || contador == 4) {
+                    classificar.innerHTML = `Cúmplice`;
+                } else if (contador == 5) {
+                    classificar.innerHTML = `Assassino`;
+                } else {
+                    classificar.innerHTML = `Inocente`;
+                }
+            }
+            botao.addEventListener("click", verificar);
+        </script>
+    </body>
+</html>
