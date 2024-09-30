@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Digite o primeiro número<input type="number" id="entrada1" /></p>
+        <p>Digite o segundo número<input type="number" id="entrada2" /></p>
+        <p>Digite o terceiro número<input type="number" id="entrada3" /></p>
+        <button id="botao" onclick="verificar()">verificar</button>
+        <p id="saida"></p>
+        <script>
+            let botao = document.getElementById("botao");
+
+            function verificar() {
+                let entrada1 = Number(
+                    document.getElementById("entrada1").value
+                );
+                let entrada2 = Number(
+                    document.getElementById("entrada2").value
+                );
+                let entrada3 = Number(
+                    document.getElementById("entrada3").value
+                );
+
+                let saida = document.getElementById("saida");
+
+                if (entrada1 < entrada2 && entrada1 < entrada3) {
+                    saida.innerHTML = `O primeiro número digitado ${entrada1} é o menor`;
+                } else if (entrada2 < entrada1 && entrada2 < entrada3) {
+                    saida.innerHTML = `O segundo númeoro digitado ${entrada2} é o menor`;
+                } else if (entrada3 < entrada1 && entrada3 < entrada2) {
+                    saida.innerHTML = `O terceiro número digitado ${entrada3} é o menor`;
+                }
+
+                botao.addEventListener("click", verificar);
+            }
+        </script>
+    </body>
+</html>
