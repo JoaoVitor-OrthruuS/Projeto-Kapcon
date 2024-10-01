@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Digite o valor de A <input type="number" id="a" /></p>
+        <p>Digite o valor de B <input type="number" id="b" /></p>
+        <p>Digite o valor de C <input type="number" id="c" /></p>
+        <button id="botao">Calcular</button>
+        <p id="saida"></p>
+        <script>
+            let botao = document.getElementById("botao");
+
+            function Calcular() {
+                let a = Number(document.getElementById("a").value);
+                let b = Number(document.getElementById("b").value);
+                let c = Number(document.getElementById("c").value);
+
+                let saida = document.getElementById("saida");
+                if (a == 0) {
+                    saida.innerHTML = `O valor de A é 0, portando não é uma equação do segundo grau`;
+                } else {
+                    let delta = b ** 2 - 4 * a * c;
+                    if (delta < 0) {
+                        saida.innerHTML = `O valor de delta é negativo, portando a equação não possui raizes reais`;
+                    } else if (delta == 0) {
+                        let resultado = 0;
+                        resultado = -b / (2 * a);
+                        saida.innerHTML = `O valor de delta é igual a 0, portando temos apenas uma raiz real no valor de ${resultado}`;
+                    } else if (delta > 0) {
+                        let resultado1 = (-b + Math.sqrt(delta)) / (2 * a);
+                        let resultado2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+                        saida.innerHTML = `O valor de delta é maior que 0, portando temos duas raizes: ${resultado1} e ${resultado2}`;
+                    }
+                }
+            }
+
+            botao.addEventListener("click", Calcular);
+        </script>
+    </body>
+</html>
