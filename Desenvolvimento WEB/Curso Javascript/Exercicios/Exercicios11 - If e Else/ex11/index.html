@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            Digite a quantidade de litros desejada
+            <input type="number" id="litros" />
+        </p>
+        <p>
+            Digite o tipo de combustivel desejado
+            <input type="text" id="tipo" />
+        </p>
+        <button id="botao">Calcular</button>
+        <p id="saida"></p>
+        <script>
+            let botao = document.getElementById("botao");
+
+            function Calcular() {
+                let litros = Number(document.getElementById("litros").value);
+                let tipo = document.getElementById("tipo").value.toLowerCase();
+
+                let saida = document.getElementById("saida");
+
+                if (tipo == "a") {
+                    if (litros < 20) {
+                        saida.innerHTML = `Tipo de escolhido: Álcool, litros: ${litros}, desconto de 3% por litro!`;
+                    } else if (litros >= 20) {
+                        saida.innerHTML = `Tipo de escolhido: Álcool, litros: ${litros}, desconto de 5% por litro!`;
+                    }
+                } else if (tipo == "g") {
+                    if (litros < 20) {
+                        saida.innerHTML = `Tipo de escolhido: Gasolina, litros: ${litros}, desconto de 4% por litro!`;
+                    } else if (litros >= 20) {
+                        saida.innerHTML = `Tipo de escolhido: Gasolina, litros: ${litros}, desconto de 6% por litro!`;
+                    }
+                } else {
+                    saida.innerHTML = `Tipo inválido, escreva "A" para álcool ou "G" para gasolina`;
+                }
+            }
+
+            botao.addEventListener("click", Calcular);
+        </script>
+    </body>
+</html>
