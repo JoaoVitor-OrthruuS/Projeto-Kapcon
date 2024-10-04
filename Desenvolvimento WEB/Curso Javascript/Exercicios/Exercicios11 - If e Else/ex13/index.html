@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Digite o valor da sua hora<input type="number" id="val_hora" /></p>
+        <p>
+            Digite a quantidade de horas trabalhadas
+            <input type="number" id="horas" />
+        </p>
+        <button id="botao">Verificar</button>
+        <p id="saida"></p>
+
+        <script>
+            //Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do salário bruto, mas não é descontado (é a empresa que deposita.)
+
+            //O salário líquido corresponde ao salário bruto menos os descontos O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
+
+            //a. Desconto do IR;
+            //b. Salário Bruto ate R$900,00 (inclusive) – Isento;
+            //c. Salário Bruto de R$ 1500, 00 (inclusive) – desconto de 5%;
+            //d. Salario bruto até R$ 2500,00 (Inclusive) – desconto de 10%;
+            //e. Salário bruto acima de 2500 – Desconto de 20%.
+            //Imprima na tela as informações, dispostas conforme o exemplo abaixo, no exemplo valor da hora é 5 e a quantidade de horas é 220.
+
+            //Salário bruto (5 * 220)           : R$   1100,00
+
+            //( – ) IR (5%)                     : R$     55,00
+
+            //( – ) INSS ( 10% )                 : R$     110,00
+
+            //FGTS ( 11%)                       : R$     121,00
+
+            //Total de descontos                 : R$     165,00
+
+            //Salário Líquido                   : R$     935,00
+            let botao = document.getElementById("botao");
+
+            function Verificar() {
+                let val_hora = Number(
+                    document.getElementById("val_hora").value
+                );
+                let horas = Number(document.getElementById("horas").value);
+                let saida = document.getElementById("saida");
+                let bruto = val_hora * horas;
+                let fgts = bruto * (11 / 100);
+                let inss = bruto * (10 / 100);
+                let ir = 0;
+
+                if (bruto <= 900) {
+                    saida.innerHTML = `Salário bruto: R$${bruto}<br> IR: R$${ir}<br> INSS: R$${inss}<br> FGTS: R$${fgts}<br> Total de descontos: R$${
+                        inss + ir
+                    }<br> Salário Líquido: R$${bruto - inss - ir}<br>`;
+                } else if (bruto <= 1500) {
+                    ir = bruto * (5 / 100);
+                    saida.innerHTML = `Salário bruto: R$${bruto}<br> IR: R$${ir}<br> INSS: R$${inss}<br> FGTS: R$${fgts}<br> Total de descontos: R$${
+                        inss + ir
+                    }<br> Salário Líquido: R$${bruto - inss - ir}<br>`;
+                } else if (bruto <= 2500) {
+                    ir = bruto * (10 / 100);
+
+                    saida.innerHTML = `Salário bruto: R$${bruto}<br> IR: R$${ir}<br> INSS: R$${inss}<br> FGTS: R$${fgts}<br> Total de descontos: R$${
+                        inss + ir
+                    }<br> Salário Líquido: R$${bruto - inss - ir}<br>`;
+                } else if (bruto > 2500) {
+                    ir = bruto * (20 / 100);
+
+                    saida.innerHTML = `Salário bruto: R$${bruto}<br> IR: R$${ir}<br> INSS: R$${inss}<br> FGTS: R$${fgts}<br> Total de descontos: R$${
+                        inss + ir
+                    }<br> Salário Líquido: R$${bruto - inss - ir}<br>`;
+                }
+            }
+
+            botao.addEventListener("click", Verificar);
+        </script>
+    </body>
+</html>
