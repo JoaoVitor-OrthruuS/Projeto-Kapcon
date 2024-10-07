@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p><input id="numero" type="number" /></p>
+        <button id="botao">calcular</button>
+        <p id="saida"></p>
+
+        <script>
+            let botao = document.getElementById("botao");
+
+            function calcular() {
+                let numero = Number(document.getElementById("numero").value);
+                let saida = document.getElementById("saida");
+                let contador = 1;
+                while (contador <= 10) {
+                    saida.innerHTML += `${contador} x ${numero} = ${
+                        contador * numero
+                    }<br>`;
+                    contador++;
+                }
+            }
+
+            botao.addEventListener("click", calcular);
+        </script>
+    </body>
+</html>
