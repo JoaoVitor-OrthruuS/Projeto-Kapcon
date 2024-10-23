@@ -1,0 +1,26 @@
+main {
+    width: 600px;
+    height: 600px;
+    background-color: black;
+}
+
+#resultado {
+    width: 500px;
+    height: 50px;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.botao {
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 8px;
+    align-items: center;
+}
