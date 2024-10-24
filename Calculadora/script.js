@@ -1,19 +1,5 @@
-function calcularMais(valor1, valor2) {
-    const resultado = valor1 + valor2;
-    return resultado;
+function adicionar(numero) {
+    let resultado = (document.getElementById("resultado").innerHTML += numero);
 }
 
-function calcularMenos(valor1, valor2) {
-    const resultado = valor1 - valor2;
-    return resultado;
-}
-
-function calcularMult(valor1, valor2) {
-    const resultado = valor1 * valor2;
-    return resultado;
-}
-
-function calcularDiv(valor1, valor2) {
-    const resultado = valor1 / valor2;
-    return resultado;
-}
+function limpar() {}
