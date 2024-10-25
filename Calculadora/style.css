@@ -25,6 +25,8 @@ main {
     height: 50px;
     background-color: white;
     border-radius: 5px;
+    text-align: end;
+    align-content: center;
 }
 
 .botoes {
