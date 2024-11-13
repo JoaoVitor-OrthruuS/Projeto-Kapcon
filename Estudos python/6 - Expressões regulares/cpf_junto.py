@@ -7,3 +7,4 @@ if re.search("\d{11}", cpf):
     print("Número CPF válido")
 else:
     print("Número do CPF fora do padrão")
+input("Pressione ENTER para sair...")
