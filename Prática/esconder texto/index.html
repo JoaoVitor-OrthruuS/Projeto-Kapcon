@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="texto">Texto</p>
+        <button id="botao">Ocultar</button>
+        <script>
+            const botao = document.querySelector("#botao");
+            const texto = document.querySelector("#texto");
+
+            const ocultar = () => {
+                if (botao.innerText == "Esconder") {
+                    botao.innerText = "Mostrar";
+                    texto.style.display = "none";
+                } else {
+                    botao.innerText = "Esconder";
+                    texto.style.display = "block";
+                }
+            };
+
+            botao.addEventListener("click", ocultar);
+        </script>
+    </body>
+</html>
