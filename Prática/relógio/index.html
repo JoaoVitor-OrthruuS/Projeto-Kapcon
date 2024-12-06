@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <span id="horario"></span>
+        <script>
+            function relogio() {
+                const horario = document.getElementById("horario");
+
+                const agora = new Date();
+                const horas = String(agora.getHours()).padStart(2, "0"); // Adiciona zero à esquerda
+                const minutos = String(agora.getMinutes()).padStart(2, "0"); // Adiciona zero à esquerda
+                const segundos = String(agora.getSeconds()).padStart(2, "0"); // Adiciona zero à esquerda
+
+                horario.innerText = `${horas}:${minutos}:${segundos}`;
+            }
+
+            relogio();
+            setInterval(relogio, 1000);
+        </script>
+    </body>
+</html>
