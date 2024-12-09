@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body {
+                background-color: #f9fcff;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btnMudarCor">Mudar Cor</button>
+        <script>
+            const btnMudarCor = document.getElementById("btnMudarCor");
+
+            btnMudarCor.addEventListener("click", () => {
+                const corAleatoria = Math.floor(
+                    Math.random() * 0xffffff
+                ).toString(16);
+
+                document.body.style.backgroundColor = `#${corAleatoria}`;
+                console.log(corAleatoria);
+            });
+        </script>
+    </body>
+</html>
