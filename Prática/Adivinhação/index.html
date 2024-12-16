@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Digite um número de 1 a 100: <input type="number" id="numUser" /></p>
+        <button id="btnEnviar">Enviar número</button>
+    </body>
+    <script>
+        const btnEnviar = document.getElementById("btnEnviar");
+        const numero = Math.floor(Math.random() * 100);
+        const saida = document.createElement("p");
+        document.body.insertBefore(saida, btnEnviar);
+
+        btnEnviar.addEventListener("click", () => {
+            const numUser = document.getElementById("numUser").value;
+
+            if (numUser == numero) {
+                saida.innerText = `Você acertou! Parabéns!`;
+            } else if (numUser < numero) {
+                saida.innerText = `Você errou! Valor muito baixo!`;
+            } else if (numUser > numero) {
+                saida.innerText = `Você errou! Valor muito alto!`;
+            }
+        });
+    </script>
+</html>
