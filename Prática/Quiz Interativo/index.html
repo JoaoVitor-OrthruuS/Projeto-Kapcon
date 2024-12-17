@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script>
+            const container = document.getElementById("container");
+
+            const perguntas = [
+                {
+                    pergunta: "Qual é a capital do Brasil?",
+                    opcoes: ["Brasilia", "São Paulo", "Rio de Janeiro"],
+                    resposta: "Brasilia",
+                },
+                {
+                    pergunta: "Quanto é 2+2?",
+                    opcoes: ["8", "14", "4"],
+                    resposta: "4",
+                },
+            ];
+
+            let indexAtual = 0;
+            function exibirPerguntas() {
+                const perguntaAtual = perguntas[indexAtual];
+
+                //Cria o enunciado utilizando um h3
+                const enunciado = document.createElement("h3");
+                enunciado.textContent = perguntaAtual.pergunta;
+                container.appendChild(enunciado);
+
+                perguntaAtual.opcoes.forEach((opcao) => {
+                    const botao = document.createElement("button");
+                    botao.textContent = opcao;
+                    container.appendChild(botao);
+
+                    botao.addEventListener("click", () => {
+                        if (opcao === perguntaAtual.resposta) {
+                            window.alert("Parabéns, você acertou!");
+                        } else {
+                            window.alert("Você errou!");
+                        }
+
+                        indexAtual++;
+
+                        if (indexAtual < perguntas.length) {
+                            exibirPerguntas();
+                        } else {
+                            container.textContent = "Você terminou o Quiz!";
+                        }
+                    });
+                });
+            }
+
+            exibirPerguntas();
+        </script>
+    </body>
+</html>
