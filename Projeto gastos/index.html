@@ -8,23 +8,32 @@
         <title>Document</title>
     </head>
     <body>
-        <p>Data:<input type="date" id="data" /></p>
-        <p>Descrição:<input type="text" id="descricao" /></p>
-        <p>Categoria:<input type="text" id="categoria" /></p>
-        <p>Valor:<input type="number" id="valor" /></p>
-        <p>Forma de Pagamento:<input type="text" id="formaPagamento" /></p>
-        <button id="btnAddGasto">Adicionar</button>
-        <table>
-            <thead>
-                <tr>
-                    <th>Data</th>
-                    <th>Descrição</th>
-                    <th>Categoria</th>
-                    <th>Valor</th>
-                    <th>Forma de pagamento</th>
-                </tr>
-            </thead>
-            <tbody id="saida"></tbody>
-        </table>
+        <main>
+            <p>Data:<input type="date" id="data" /></p>
+            <p>Descrição:<input type="text" id="descricao" /></p>
+            <p>Categoria:<input type="text" id="categoria" /></p>
+            <p>Valor:<input type="number" id="valor" /></p>
+            <p>Forma de Pagamento:<input type="text" id="formaPagamento" /></p>
+            <button id="btnAddGasto">Adicionar</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Valor</th>
+                        <th>Forma de pagamento</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody id="saida"></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Valor total de gastos:</th>
+                        <td id="valorTotal">R$ 0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
     </body>
 </html>
