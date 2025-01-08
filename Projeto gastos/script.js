@@ -3,31 +3,30 @@ let total = 0;
 
 btnAddGasto.addEventListener("click", () => {
     //Entrada de todos os dados de gastos
-    const dados = [
-        document.getElementById("data").value,
-        document.getElementById("descricao").value,
-        document.getElementById("categoria").value,
-        document.getElementById("valor").value,
-        document.getElementById("formaPagamento").value,
-    ];
+    const dados = {
+        data: document.getElementById("data").value,
+        descricao: document.getElementById("descricao").value,
+        categoria: document.getElementById("categoria").value,
+        valor: document.getElementById("valor").value,
+        formaPagamento: document.getElementById("formaPagamento").value,
+    };
 
     //Testa se todos os campos foram preenchidos.
     if (
-        dados[0] === "" ||
-        dados[1] === "" ||
-        dados[2] === "" ||
-        dados[3] === "" ||
-        dados[4] === ""
+        dados.data === "" ||
+        dados.descricao === "" ||
+        dados.categoria === "" ||
+        dados.valor === "" ||
+        dados.formaPagamento === ""
     ) {
         console.log("Um dos campos está Vazio!");
     } else {
         //Saida do valor total de gastos
-        const valorGasto = parseFloat(dados[3]);
+        const valorGasto = parseFloat(dados.valor);
         const valorTotal = document.getElementById("valorTotal");
 
         total += valorGasto;
         valorTotal.innerText = `R$ ${total.toFixed(2)}`;
-
         //Declarando a saida, o tbody que recebe os appends
         const saida = document.getElementById("saida");
 
@@ -38,9 +37,9 @@ btnAddGasto.addEventListener("click", () => {
         saida.appendChild(novoTr);
 
         //Criando os novos campos na tabela preenchidos
-        dados.forEach((dados) => {
+        Object.values(dados).forEach((dado) => {
             const novoTd = document.createElement("td");
-            novoTd.innerText = dados;
+            novoTd.innerText = dado;
             novoTr.appendChild(novoTd);
         });
 
@@ -53,6 +52,8 @@ btnAddGasto.addEventListener("click", () => {
 
         btnDeletar.addEventListener("click", () => {
             saida.removeChild(novoTr);
+            total -= valorGasto;
+            valorTotal.innerText = `R$ ${total.toFixed(2)}`;
         });
     }
 });
