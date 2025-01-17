@@ -1,6 +1,6 @@
 //Criamos um objeto com dois métodos, getNome e setNome
-const pessoa = {
-    nome: "matheus",
+class pessoa {
+     nome: "matheus",
 
     getNome: function () {
         return this.nome; //Usamos this para mostrar que o que deve ser usado é o atributo deste objeto

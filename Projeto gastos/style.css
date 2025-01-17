@@ -1,12 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/*Header e navbar*/
+header {
+    display: flex;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+}
+nav {
+    margin: 0 auto;
+}
+
+li {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
 table {
     overflow: auto;
     width: 100%;
+    margin: 0 auto;
 }
 
 table {
     border: 1px solid #e3e3e3;
     height: 100%;
-    width: 80%;
+    width: 70%;
     table-layout: auto;
     border-collapse: collapse;
     border-spacing: 1px;
