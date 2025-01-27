@@ -29,31 +29,55 @@ content {
 
 #box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    border-top: 1px solid rgba(226, 221, 215, 0.7);
+    border-bottom: 1px solid rgba(226, 221, 215, 0.7);
+}
+
+#box-btnExpand {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
 }
 
 /*Estilo do botão Adicionar*/
-#btnAdicionar {
-    background-color: #e2ddd7;
-    color: #1c1b1b;
+#btnExpandGasto,
+#btnExpandReceita {
+    background-color: rgba(128, 128, 128, 0.24);
+    color: #e2ddd7;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px;
+    width: 19%;
+    height: 50px;
+    border-radius: 8px;
+    margin: 0px 15px;
+    border: 1px solid rgba(226, 221, 215, 0.5);
 }
 
-#btnAdicionar:hover {
+#btnExpandGasto:hover,
+#btnExpandReceita:hover {
     background-color: #1c1b1b;
     color: #e2ddd7;
     cursor: pointer;
+    border: 1px solid rgba(226, 221, 215, 0.5);
 }
 
 .box-content {
-    width: 24%;
+    width: 19%;
     height: 100px;
-    border: 1px solid rgba(226, 221, 215, 0.7);
-    border-radius: 12px;
     color: #e2ddd7;
     padding-left: 10px;
+    text-align: center;
+}
+
+p {
+    color: #e2ddd7;
+    font-weight: bold;
+}
+
+h2 {
+    color: #e2ddd7;
 }
