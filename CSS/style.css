@@ -74,7 +74,7 @@ li {
 }
 
 #btn-area-cliente {
-    background-color: #ee5b07;
+    background-color: #1a6d51;
     border-radius: 8px;
     padding: 15px;
     color: white;
@@ -144,7 +144,7 @@ li {
 }
 
 #btn_contact {
-    background-color: #ee5b07;
+    background-color: #1a6d51;
 }
 
 #btn_mais {
@@ -157,7 +157,7 @@ li {
 }
 
 #btn_mais:hover {
-    background-color: black;
+    background-color: #101820ff;
     color: white;
 }
 
