@@ -17,6 +17,9 @@ header {
     background-color: #101820ff;
     color: white;
     padding: 8px 20px;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 nav {
@@ -25,7 +28,9 @@ nav {
     align-items: center;
     background-color: #101820ff;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 ul {
@@ -39,6 +44,7 @@ ul {
 
 li {
     margin: 0 10px;
+    font-size: 15px;
 }
 
 #social-media {
@@ -113,6 +119,13 @@ li {
     color: white;
     padding: 20px;
     box-sizing: border-box;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 #background_init_text {
@@ -174,6 +187,17 @@ li {
     color: white;
 }
 
+#email a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#email a:hover {
+    color: #ff7e29;
+    transition: color 0.3s;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     header,
@@ -195,10 +219,6 @@ li {
 
     #background_init {
         height: 60vh;
-    }
-
-    #background_init_text {
-        max-width: 80%;
     }
 
     #background_init_text h2 {
@@ -225,6 +245,11 @@ li {
     header {
         height: auto;
         padding: 10px;
+        flex-direction: row;
+    }
+
+    #social-media {
+        flex-direction: row;
     }
 
     nav {
@@ -251,7 +276,7 @@ li {
     }
 
     #background_init_text {
-        max-width: 90%;
+        max-width: 80%;
     }
 
     #background_init_text h2 {
