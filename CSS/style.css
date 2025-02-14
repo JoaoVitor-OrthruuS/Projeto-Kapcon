@@ -21,7 +21,7 @@ header {
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-
+/*Menu de Navegação*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -98,18 +98,21 @@ li {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #btn-area-cliente:hover {
     background-color: #ff7e29;
-    font-weight: bold;
 }
+
+/*Primeira section*/
 
 #background_init {
     background: linear-gradient(rgba(204, 85, 0, 0.7), rgba(255, 153, 51, 0.7)),
-        url("../ASSETS/Images/background_init1.jpg");
+        url("../ASSETS/Images/background_init.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     height: 80vh;
     width: 100vw;
@@ -186,16 +189,42 @@ li {
     background-color: #101820ff;
     color: white;
 }
+/*Segunda section*/
 
-#email a {
-    color: white;
-    text-decoration: none;
+#setores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#setores h3 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: rgba(204, 85, 0);
     font-weight: bold;
 }
 
-#email a:hover {
-    color: #ff7e29;
-    transition: color 0.3s;
+#box_setores {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.setor_cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.setor_cont img {
+    width: 100px;
+}
+
+.setor_cont h4 {
+    color: #1a6d51;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* Media Queries for Responsiveness */
