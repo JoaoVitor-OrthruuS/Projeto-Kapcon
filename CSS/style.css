@@ -1,3 +1,4 @@
+/* Estilos globais */
 * {
     font-family: "Roboto", "Calibri", "sans-serif";
     box-sizing: border-box;
@@ -8,6 +9,12 @@
 body {
     line-height: 1.6;
     color: #333;
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -21,7 +28,8 @@ header {
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-/*Menu de Navegação*/
+
+/* Menu de Navegação */
 nav {
     display: flex;
     justify-content: space-around;
@@ -105,8 +113,7 @@ li {
     background-color: #ff7e29;
 }
 
-/*Primeira section*/
-
+/* Primeira section */
 #background_init {
     background: linear-gradient(rgba(204, 85, 0, 0.7), rgba(255, 153, 51, 0.7)),
         url("../ASSETS/Images/background_init.jpg");
@@ -125,6 +132,7 @@ li {
     opacity: 0;
     animation: fadeIn 5s forwards;
 }
+
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -193,8 +201,8 @@ li {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
         0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-/*Segunda section*/
 
+/* Segunda section */
 #setores {
     display: flex;
     flex-direction: column;
@@ -247,7 +255,37 @@ li {
     font-size: 20px;
 }
 
+/* Terceira Section */
+#section_sobre {
+    display: flex;
+    justify-content: center;
+}
+
+#section_sobre div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#section_sobre img {
+    width: 570px;
+    height: 513px;
+}
+
+#section_sobre h3 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: rgba(204, 85, 0);
+    font-weight: bold;
+}
+
 /* Media Queries for Responsiveness */
+@media (max-width: 1920px) {
+    #background_init_text h2 {
+        font-size: 45px;
+    }
+}
+
 @media (max-width: 768px) {
     header,
     nav,
