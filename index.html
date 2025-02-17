@@ -25,28 +25,48 @@
             </div>
         </header>
         <main>
-            <section>
-                <nav>
-                    <img
-                        src="./ASSETS/Images/Logo-kapcon.png"
-                        alt="logo"
-                        style="height: 70px"
-                    />
-                    <ul>
-                        <li><a class="btn-nav" href="#">Home</a></li>
-                        <li><a href="#" class="btn-nav">Especialidades</a></li>
-                        <li><a href="#" class="btn-nav">Serviços</a></li>
-                        <li><a href="#" class="btn-nav">Sobre Nós</a></li>
-                        <li><a href="#" class="btn-nav">Blog</a></li>
-                        <li><a href="#" class="btn-nav">Contato</a></li>
-                        <li>
-                            <a href="#" class="btn-nav">Área do Colaborador</a>
-                        </li>
+            <nav>
+                <img
+                    src="./ASSETS/Images/Logo-kapcon.png"
+                    alt="logo"
+                    style="height: 70px"
+                />
+                <ul>
+                    <li><a class="btn-nav" href="#">Home</a></li>
+                    <li>
+                        <a href="#" class="btn-nav">Especialidades</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        >Contabilidade para transportadoras</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Contabilidade para telecomunicações</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">Contabilidade para Comércio</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contabilidade para PetShop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="btn-nav">Serviços</a></li>
+                    <li><a href="#" class="btn-nav">Sobre Nós</a></li>
+                    <li><a href="#" class="btn-nav">Blog</a></li>
+                    <li><a href="#" class="btn-nav">Contato</a></li>
+                    <li>
+                        <a href="#" class="btn-nav">Área do Colaborador</a>
+                    </li>
+                </ul>
+                <div id="btn-area-cliente">Área do cliente</div>
+            </nav>
 
-                    </ul>
-                    <div id="btn-area-cliente">Área do cliente</div>
-                </nav>
-            </section>
             <section id="background_init">
                 <div id="background_init_text">
                     <h2>
@@ -74,19 +94,22 @@
                         Entre em contato e deixe um especialista da Kapcon
                         Contabilidade te auxiliar!
                     </p>
-                    <a href="#">
                     <div id="box_setores">
-                        <div class="setor_cont">
-                            <img src="./ASSETS/Images/Icone_transporte.png" />
-                            <h4>Transportadoras</h4>
-                            <p>
-                                A contabilidade para transportadoras coloca o
-                                seu negócio em uma rota direta para o sucesso!
-                            </p>
-                        </div>
-                    </a>
-                        <a href="#"
-                            ><div class="setor_cont">
+                        <a href="#">
+                            <div class="setor_cont">
+                                <img
+                                    src="./ASSETS/Images/Icone_transporte.png"
+                                />
+                                <h4>Transportadoras</h4>
+                                <p>
+                                    A contabilidade para transportadoras coloca
+                                    o seu negócio em uma rota direta para o
+                                    sucesso!
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="setor_cont">
                                 <img src="./ASSETS/Images/Icone_telecom.png" />
                                 <h4>Telecomunicações</h4>
                                 <p>
@@ -94,10 +117,10 @@
                                     pessoas conectadas, o nosso é que sua
                                     empresa não lide com burocracias.
                                 </p>
-                            </div></a
-                        >
-                        <a href="#"
-                            ><div class="setor_cont">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="setor_cont">
                                 <img src="./ASSETS/Images/Icone_comercio.png" />
                                 <h4>Comércio</h4>
                                 <p>
@@ -106,28 +129,115 @@
                                 </p>
                             </div>
                         </a>
-                    <a href="#">
-                        <div class="setor_cont">
-                            <img src="./ASSETS/Images/Icone_petshop.png" />
-                            <h4>Pet Shop</h4>
-                            <p>
-                                Garanta segurança e eficiência para o seu pet
-                                shop com profissionais especializados na sua
-                                área.
-                            </p>
-                        </div>
-                    </a>
+                        <a href="#">
+                            <div class="setor_cont">
+                                <img src="./ASSETS/Images/Icone_petshop.png" />
+                                <h4>Pet Shop</h4>
+                                <p>
+                                    Garanta segurança e eficiência para o seu
+                                    pet shop com profissionais especializados na
+                                    sua área.
+                                </p>
+                            </div>
+                        </a>
                     </div>
                     <a id="btn_contact"> Entre Em Contato</a>
                 </div>
             </section>
             <section id="section_sobre">
-                <div><img src="./ASSETS/Images/Imagem-home-sessao-2-Kapcon-contabilidade-em-SP.jpg" alt=""></div>
-                <div><h3>Descubra um pouco mais sobre a nossa empresa!</h3>
-                    <p>A Kapcon Contabilidade atua no mercado desde 1999 e vem exercendo um trabalho de assessoria com comprometimento e responsabilidade, com ênfase nas áreas: contábil, fiscal, pessoal, societária, paralegal e tributária.</p>
-                    <p>Nosso objetivo é desenvolver uma empresa de visão empreendedora, buscando modernidade, agilidade, confiança e avanços tecnológicos para melhor atender e satisfazer as necessidades dos clientes.</p>
+                <div>
+                    <img
+                        src="./ASSETS/Images/Imagem-home-sessao-2-Kapcon-contabilidade-em-SP.jpg"
+                        alt=""
+                    />
+                </div>
+                <div>
+                    <h3>Descubra um pouco mais sobre a nossa empresa!</h3>
+                    <p>
+                        A Kapcon Contabilidade atua no mercado desde 1999 e vem
+                        exercendo um trabalho de assessoria com comprometimento
+                        e responsabilidade, com ênfase nas áreas: contábil,
+                        fiscal, pessoal, societária, paralegal e tributária.
+                    </p>
+                    <p>
+                        Nosso objetivo é desenvolver uma empresa de visão
+                        empreendedora, buscando modernidade, agilidade,
+                        confiança e avanços tecnológicos para melhor atender e
+                        satisfazer as necessidades dos clientes.
+                    </p>
                 </div>
             </section>
         </main>
+        <footer>
+            <div id="footer_info">
+                <div id="footer_logo">
+                    <img
+                        src="./ASSETS/Images/Logo-kapcon2.png"
+                        alt="logo"
+                        style="height: 70px"
+                    />
+                </div>
+                <div class="footer_nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav">
+                    <h4>Especialidades</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Contabilidade para transportadoras</a>
+                        </li>
+                        <li>
+                            <a href="#">Contabilidade para telecomunicações</a>
+                        </li>
+                        <li><a href="#">Contabilidade para Comércio</a></li>
+                        <li><a href="#">Contabilidade para PetShop</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Services Contábeis</a></li>
+                        <li><a href="#">Serviços Fiscais</a></li>
+                        <li><a href="#">Gestão Pessoal</a></li>
+                        <li><a href="#">Legalização de Empresa</a></li>
+                        <li><a href="#">Departamento Jurídico</a></li>
+                        <li><a href="#"> Certificado Digital </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Entre em contato:</h4>
+                    <div id="social-media">
+                        <a
+                            href="#"
+                            class="fa fa-whatsapp social-media-icon"
+                        ></a>
+                        <a
+                            href="#"
+                            class="fa fa-facebook social-media-icon"
+                        ></a>
+                        <a
+                            href="#"
+                            class="fa fa-instagram social-media-icon"
+                        ></a>
+                        <a href="#" class="fa fa-twitter social-media-icon"></a>
+                        <a
+                            href="#"
+                            class="fa fa-envelope social-media-icon"
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div id="footer_priv">
+                <p>Kapcon Contabilidade — Contabilidade na Vila Mariana – SP</p>
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </footer>
     </body>
 </html>
