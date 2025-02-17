@@ -39,10 +39,10 @@ nav {
     padding: 10px 0px;
     opacity: 0;
     animation: fadeIn 2s forwards;
-    position: -webkit-sticky; /* Para compatibilidade com navegadores WebKit */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Certifique-se de que o nav fique acima de outros elementos */
+    z-index: 1000;
 }
 
 ul {
@@ -113,30 +113,52 @@ li {
     font-weight: bold;
 }
 
-/*Dropdown dos botões do nav*/
-
-.fas {
-    float: right;
-    margin-left: 10px;
-    padding-top: 3px;
-}
-/* dropdown menu style */
-
-.dropdown-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: black;
-}
-
-.dropdown-menu ul {
-    display: block;
-    margin: 10px;
+.btn-nav {
+    text-decoration: none;
+    color: white;
 }
 
 #btn-area-cliente:hover {
     background-color: #ff7e29;
+}
+
+/*DropDown Menu*/
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #101820ff;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap; /* Impede a quebra de texto */
+}
+
+.dropdown-menu ul li {
+    margin: 5px;
+}
+li {
+    position: relative;
+}
+
+.dropdown-menu ul li a:hover {
+    color: #ff7e29;
+}
+
+li:hover .dropdown-menu {
+    display: block;
 }
 
 /* Primeira section */
