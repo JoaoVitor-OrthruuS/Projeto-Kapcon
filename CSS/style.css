@@ -303,30 +303,6 @@ li:hover .dropdown-menu {
     font-size: 20px;
 }
 
-/* Terceira Section */
-#section_sobre {
-    display: flex;
-    justify-content: center;
-}
-
-#section_sobre div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-#section_sobre img {
-    width: 570px;
-    height: 513px;
-}
-
-#section_sobre h3 {
-    font-size: 30px;
-    margin: 20px 0;
-    color: rgba(204, 85, 0);
-    font-weight: bold;
-}
-
 /*Footer*/
 
 footer {
