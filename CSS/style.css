@@ -323,12 +323,14 @@ li:hover .dropdown-menu {
     background-position: center;
     background-size: cover;
     display: flex;
+    color: white;
+    text-align: center;
+}
+
+#section3_sobre {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 .carousel-item h3 {
@@ -339,12 +341,23 @@ li:hover .dropdown-menu {
     color: white;
 }
 
-.carousel-item div {
+.carousel-item #section3_sobre {
     width: 50%;
 }
 
 .carousel-item p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item #btn_contact {
+    width: 310px;
+    margin: 30px auto;
+}
+
+.section3_servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Footer*/
