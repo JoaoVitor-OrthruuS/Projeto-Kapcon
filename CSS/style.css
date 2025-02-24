@@ -432,132 +432,11 @@ footer hr {
     }
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1920px) {
-    #background_init_text h2 {
-        font-size: 45px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    a {
-        font-size: 16px;
-    }
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
-    header,
-    nav,
-    ul,
-    #social-media {
+    nav ul {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
-    #btn-area-cliente {
-        width: 100%;
-        text-align: center;
-    }
-
-    #background_init {
-        height: 60vh;
-    }
-
-    #background_init_text h2 {
-        font-size: 35px;
-    }
-
-    #background_init_text p {
-        font-size: 14px;
-    }
-
-    #background_init_text .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #btn_contact,
-    #btn_mais {
-        width: 100%;
-        padding: 10px 20px;
-    }
-
-    #box_setores {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .setor_cont {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    #section_sobre div {
-        width: 90%;
-    }
-
-    #section_sobre img {
-        width: 100%;
-        height: auto;
-    }
-
-    footer {
-        align-items: center;
-    }
-
-    #footer_info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer_nav ul {
-        align-items: center;
-    }
-
-    #footer_priv {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        height: auto;
-        padding: 10px;
-        flex-direction: row;
-    }
-
-    #social-media {
-        flex-direction: row;
-    }
-
-    nav {
-        padding: 10px;
-    }
-
-    ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
-    #btn-area-cliente {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    #background_init {
-        height: 50vh;
     }
 
     #background_init_text {
@@ -569,18 +448,7 @@ footer hr {
     }
 
     #background_init_text p {
-        font-size: 14px;
-    }
-
-    #background_init_text .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #btn_contact,
-    #btn_mais {
-        width: 100%;
-        padding: 10px 20px;
+        font-size: 16px;
     }
 
     #box_setores {
@@ -588,21 +456,16 @@ footer hr {
         align-items: center;
     }
 
-    .setor_cont {
-        width: 90%;
-        margin-bottom: 20px;
+    .carousel-item h3 {
+        font-size: 30px;
     }
 
-    #section_sobre div {
-        width: 100%;
-    }
-
-    #section_sobre img {
-        width: 100%;
-        height: auto;
+    .carousel-item #section3_sobre {
+        width: 80%;
     }
 
     footer {
+        flex-direction: column;
         align-items: center;
     }
 
@@ -611,7 +474,50 @@ footer hr {
         align-items: center;
     }
 
-    .footer_nav ul {
+    #footer_priv {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #background_init_text {
+        max-width: 90%;
+    }
+
+    #background_init_text h2 {
+        font-size: 24px;
+    }
+
+    #background_init_text p {
+        font-size: 14px;
+    }
+
+    #box_setores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-item h3 {
+        font-size: 24px;
+    }
+
+    .carousel-item #section3_sobre {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_info {
+        flex-direction: column;
         align-items: center;
     }
 
