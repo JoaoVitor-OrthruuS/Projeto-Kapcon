@@ -289,17 +289,27 @@ li:hover .dropdown-menu {
 
 #box_setores {
     display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
-    width: 80%;
+    justify-content: center; 
+    align-items: stretch;    
+    margin: 30px auto;       
+    width: 100%;
+    max-width: 900px;         
+    gap: 50px;  
+    max-height: 300px;               
 }
 
 .setor_cont {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 25; /* ou ajuste conforme necessário */
+    width: 200px;
+    min-height: 320px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 12px;
+    transition: box-shadow 0.3s;
+    justify-content: flex-start;
 }
 
 .setor_cont img {
@@ -308,7 +318,7 @@ li:hover .dropdown-menu {
 
 #box_setores a {
     text-decoration: none;
-    color: #333;
+    color: #000;
 }
 
 #box_setores a:hover {
@@ -320,7 +330,7 @@ li:hover .dropdown-menu {
 }
 
 .setor_cont h4 {
-    color: #1a6d51;
+    color: #00a764;
     font-weight: bold;
     font-size: 20px;
 }
@@ -397,10 +407,11 @@ li:hover .dropdown-menu {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.box_servicos h4 {
+.box_servicos h3 {
     font-size: 20px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #00a764;
 }
 
 /*Footer*/
@@ -433,7 +444,7 @@ footer {
 }
 
 #footer_info a:hover {
-    color: #FF460A;
+    color: #00a764;
 }
 
 #footer_info li {
@@ -464,10 +475,10 @@ footer hr {
 }
 
 #footer_priv a:hover {
-    color: #FF460A;
+    color: #00a764;
 }
 
-/*Animações*/
+/* Animações */
 
 @keyframes fadeIn {
     to {
@@ -572,4 +583,30 @@ footer hr {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #00C853;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 36px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background: #00C853;
+    color: #fff;
+    transform: scale(1.1);
 }
