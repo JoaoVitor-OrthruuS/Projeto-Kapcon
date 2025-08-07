@@ -20,6 +20,13 @@ main {
 
 
 /* Menu de Navegação */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #000;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -27,12 +34,6 @@ nav {
     background-color: #000;
     color: white;
     padding: 10px 0px;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 ul {
@@ -73,6 +74,11 @@ li {
     font-family: "Roboto", "Calibri", "sans-serif";
     cursor: pointer;
     font-weight: bold;
+}
+
+.btn-nav:hover {
+    color: #00a764;
+    transition: 0.5s;
 }
 
 .btn-nav:after {
@@ -159,8 +165,6 @@ li:hover .dropdown-menu {
     color: white;
     padding: 20px;
     box-sizing: border-box;
-    opacity: 0;
-    animation: fadeIn 5s forwards;
     overflow: hidden;
     background: none;
 }
@@ -290,7 +294,6 @@ li:hover .dropdown-menu {
     align-items: center;
     text-align: center;
     width: 200px;
-    min-height: 320px;
     box-sizing: border-box;
     background: #fff;
     border-radius: 12px;
@@ -310,8 +313,8 @@ li:hover .dropdown-menu {
 #box_setores a:hover {
     padding: 5px;
     border-radius: 12px;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 167, 100, 0.24),
+        0 17px 50px 0 rgba(0, 167, 100, 0.19);
     transition: 0.5s;
 }
 
