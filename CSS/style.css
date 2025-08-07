@@ -18,17 +18,6 @@ main {
     flex-direction: column;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    color: white;
-    padding: 8px 20px;
-    position: relative;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
 
 /* Menu de Navegação */
 nav {
@@ -112,12 +101,9 @@ li {
     transition: background-color 0.3s;
     margin-bottom: 10px;
     font-weight: bold;
+    font-family: "Roboto", "Calibri", "sans-serif";
 }
 
-.btn-nav {
-    text-decoration: none;
-    color: white;
-}
 
 #btn-area-cliente:hover {
     background-color: #00a764;
@@ -280,7 +266,7 @@ li:hover .dropdown-menu {
     margin: 20px;
 }
 
-#setores h3 {
+#setores h2 {
     font-size: 30px;
     margin: 20px 0;
     color: #FF460A;
@@ -329,7 +315,7 @@ li:hover .dropdown-menu {
     transition: 0.5s;
 }
 
-.setor_cont h4 {
+.setor_cont h3 {
     color: #00a764;
     font-weight: bold;
     font-size: 20px;
@@ -368,7 +354,7 @@ li:hover .dropdown-menu {
     align-items: center;
 }
 
-.carousel-item h3 {
+.carousel-item h2 {
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: bold;
