@@ -137,6 +137,7 @@ li {
     text-decoration: none;
     color: white;
     white-space: nowrap; /* Impede a quebra de texto */
+    font-family: "Roboto", "Calibri", "sans-serif";
 }
 
 .dropdown-menu ul li {
@@ -147,7 +148,7 @@ li {
 }
 
 .dropdown-menu ul li a:hover {
-    color: #FF460A;
+    color: #00a764;
 }
 
 li:hover .dropdown-menu {
