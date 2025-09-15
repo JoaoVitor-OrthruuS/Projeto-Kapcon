@@ -1,0 +1,57 @@
+/* Estilo do formulário de contato */
+#form-contato {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#form-contato h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2d3e50;
+    font-size: 1.5rem;
+}
+
+#form-contato label {
+    font-weight: 500;
+    color: #2d3e50;
+    margin-bottom: 4px;
+}
+
+#form-contato input,
+#form-contato textarea {
+    padding: 10px;
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f7f9fa;
+    transition: border 0.2s;
+}
+
+#form-contato input:focus,
+#form-contato textarea:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+#form-contato button {
+    background: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+#form-contato button:hover {
+    background: #004d40;
+}
