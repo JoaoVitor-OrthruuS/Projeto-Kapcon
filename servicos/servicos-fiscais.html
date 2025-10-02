@@ -11,7 +11,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <script src="./SCRIPTS/carrossel.js" defer></script>
+        
         <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,6 +51,7 @@
   "description": "Serviços contábeis personalizados para empresas em diversos setores. Localizada na Vila Mariana - SP, a Kapcon oferece soluções completas com qualidade e preço justo."
 }
 </script>
+        <link rel="stylesheet" href="/CSS/servicos.css" />
         <link rel="stylesheet" href="/CSS/reset.css" />
         <link rel="stylesheet" href="/CSS/style.css" />
         <title>Kapcon Contabilidade | Serviços Contábeis na Vila Mariana - SP</title>
@@ -59,7 +60,7 @@
         <header>
             <nav>
                 <img
-                    src="/ASSETS/Images/Logo-kapcon.png"
+                    src="/ASSETS/Images/Logos/Logo-kapcon.png"
                     alt="Logo Kapcon"
                     style="height: 55px"
                 />
@@ -126,21 +127,69 @@
         <main>
             
 
-            <section id="background_init" style="background-image: linear-gradient(120deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url('/ASSETS/Images/background-departamento-contabil.jpg'); background-size: cover; background-position: center;">
+            <section id="background_init" style="background-image: linear-gradient(120deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url('/ASSETS/Images/backgrounds/background-departamento-contabil.webp'); background-size: cover; background-position: center;">
                 <div id="background_init_text">
                     <h1>Serviços Contábeis</h1>
                     <p>
-                        Conte com uma equipe especializada para cuidar da contabilidade da sua empresa com segurança, agilidade e transparência.
+                        No Departamento Contábil da Kapcon, cuidamos de todas as rotinas contábeis da sua empresa com transparência, segurança e precisão. Nosso trabalho vai além da escrituração: oferecemos informações confiáveis que servem de base para a tomada de decisões estratégicas.
                     </p>
                 </div>
             </section>
-
+<section id="section_setores">
+                <div id="setores">
+                    <h2>Oferecemos diversos serviços contábeis!
+                    </h2>
+                    <div id="box_servicos">
+                            <div class="servicos_cont">
+                                <div class="servico_item">
+                                    <img src="/ASSETS/Images/icons/Icone_escrita.png" alt="Ícone Escrituração" class="servico_icon" />
+                                    <div>
+                                        <h3>Escrituração Contábil Completa</h3>
+                                        <p>Registramos e organizamos todas as movimentações financeiras da sua empresa com base em documentos e comprovantes, seguindo rigorosamente as normas contábeis e a legislação vigente.</p>
+                                    </div>
+                                </div>
+                                <div class="servico_item">
+                                    <div>
+                                        <h3>Demonstrações Contábeis e Relatórios Gerenciais</h3>
+                                        <p>Elaboramos Balanço Patrimonial, DRE (Demonstração do Resultado do Exercício), Balancetes, Fluxo de Caixa e relatórios personalizados que permitem avaliar a real situação econômica e financeira da sua empresa.</p>
+                                    </div>
+                                    <img src="/ASSETS/Images/icons/Icone_relatorio.png" alt="Ícone Relatório" class="servico_icon" />
+                                </div>
+                                <div class="servico_item">
+                                    <img src="/ASSETS/Images/icons/Icone_calculadora.png" alt="Ícone Obrigações" class="servico_icon" />
+                                    <div>
+                                        <h3>Obrigações Acessórias Contábeis</h3>
+                                        <p>Cuidamos da entrega de declarações obrigatórias, como ECD (Escrituração Contábil Digital) e ECF (Escrituração Contábil Fiscal), sempre dentro dos prazos legais para evitar multas e complicações.</p>
+                                    </div>
+                                </div>
+                                <div class="servico_item reverse">
+                                    <div>
+                                        <h3>Organização e Controle de Documentos</h3>
+                                        <p>Mantemos toda a documentação contábil devidamente organizada e arquivada, de forma física ou digital, proporcionando segurança, transparência e facilidade em auditorias e fiscalizações.</p>
+                                    </div>
+                                    <img src="/ASSETS/Images/icons/Icone_documento.png" alt="Ícone Organização" class="servico_icon" />
+                                </div>
+                                <div class="servico_item">
+                                    <img src="/ASSETS/Images/icons/icone_analise.png" alt="Ícone Consultoria" class="servico_icon" />
+                                    <div>
+                                        <h3>Consultoria Contábil e Análise de Resultados</h3>
+                                        <p>Não nos limitamos a registrar fatos contábeis: interpretamos os dados e oferecemos análises e insights que ajudam na gestão eficiente, no controle de custos e na definição de estratégias para aumentar a lucratividade.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="servicos_video">
+                                <video src="../ASSETS/videos/video-contador-trabalhando.webm" autoplay loop muted playsinline preload="none"></video>
+                            </div>
+                    </div>
+                    <a id="btn_contact"> Entre Em Contato Conosco</a>
+                </div>
+            </section>
         </main>
         <footer>
             <div id="footer_info">
                 <div id="footer_logo">
                     <img
-                        src="/ASSETS/Images/Logo-kapcon2.png"
+                        src="/ASSETS/Images/Logos/Logo-kapcon2.png"
                         alt="Logo-kapcon2"
                         style="height: 70px"
                     />
